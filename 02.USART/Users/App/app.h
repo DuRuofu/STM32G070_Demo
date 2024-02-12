@@ -1,5 +1,8 @@
 #include "main.h"
 
+#include "uart_it_config.h"
+#include "uart_3.h"
+
 #ifndef __APP_H
 #define __APP_H
 

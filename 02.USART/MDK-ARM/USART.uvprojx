@@ -434,14 +434,14 @@
           <GroupName>Application/User/BSP</GroupName>
           <Files>
             <File>
-              <FileName>usart_3.c</FileName>
+              <FileName>uart_3.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\Users\Components\Usart\usart_3.c</FilePath>
+              <FilePath>..\Users\Components\Usart\uart_3.c</FilePath>
             </File>
             <File>
-              <FileName>usart_it_config.c</FileName>
+              <FileName>uart_it_config.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\Users\Components\Usart\usart_it_config.c</FilePath>
+              <FilePath>..\Users\Components\Usart\uart_it_config.c</FilePath>
             </File>
           </Files>
         </Group>

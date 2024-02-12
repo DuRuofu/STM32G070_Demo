@@ -7,7 +7,8 @@
 		"usart.h": "c",
 		"stm32g0xx_hal.h": "c",
 		"debug.h": "c",
-		"string.h": "c"
+		"string.h": "c",
+		"uart_3.h": "c"
 	},
 	"digital-ide.welcome.show": false
 }

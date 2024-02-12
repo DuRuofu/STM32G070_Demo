@@ -2,13 +2,13 @@
  * @Author: DuRuofu duruofu@qq.com
  * @Date: 2023-07-13 17-13-53
  * @LastEditors: DuRuofu
- * @LastEditTime: 2024-02-12 17-02-01
- * @FilePath: \MDK-ARMd:\duruofu\Project\STM32G070_Demo\02.USART\Users\Components\Usart\usart_3.c
+ * @LastEditTime: 2024-02-12 17-35-19
+ * @FilePath: \MDK-ARMd:\duruofu\Project\STM32G070_Demo\02.USART\Users\Components\Usart\uart_3.c
  * @Description: 串口3逻辑
  * Copyright (c) 2023 by duruofu@foxmail.com All Rights Reserved. 
  */
 
-#include "usart_3.h"
+#include "uart_3.h"
 
 
 #define RXBUFFERSIZE_3  256     //最大接收字节数
@@ -22,7 +22,7 @@ uint8_t Uart_RxBuffer_3;      //接收中断缓冲
 uint8_t Uart_Rx_Cnt_3 = 0;     //接收缓冲计数
 
 
-void USART3_Init(void)
+void UART3_Init(void)
 {
   /*串口硬件配置代码(使用cudeMX则不需要此部分)
   Init the GPIO of USART1
@@ -34,7 +34,7 @@ void USART3_Init(void)
 }
 
 // 串口3接收完成回调函数
-void USART3_RxCpltCallback(UART_HandleTypeDef *huart)
+void UART3_RxCpltCallback(UART_HandleTypeDef *huart)
 {
     /* Prevent unused argument(s) compilation warning */
   UNUSED(huart);
@@ -74,7 +74,7 @@ void USART3_RxCpltCallback(UART_HandleTypeDef *huart)
 }
 
 // //串口3错误回调函数(主要用来清除溢出中断)
-// void USART3_ErrorCallback(UART_HandleTypeDef *huart)
+// void UART3_ErrorCallback(UART_HandleTypeDef *huart)
 // {
 //   if(HAL_UART_ERROR_ORE)
 //   {
