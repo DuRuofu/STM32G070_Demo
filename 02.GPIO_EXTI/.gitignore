@@ -1,0 +1,10 @@
+*Output/*
+*Output/*.hex
+*.bak
+*.scvd
+*.ini
+*.Administrator
+*.hp
+*.uvoptx
+*DebugConfig/  
+*OBJ/
