@@ -14,7 +14,9 @@
 
 Description：LED闪烁
 
-### 02.GPIO
+### 02.USART
+
+Description：实现基本串口功能，重定向printf， 中断接收（单字节判断，多字节特定结束符判断）
 
 
 

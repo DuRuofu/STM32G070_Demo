@@ -20,6 +20,6 @@ void App_Init(void)
  */
 void App_Task(void)
 {
-	printf("你好!!!");
-	HAL_Delay(100);
+	printf("test!!!\n");
+	HAL_Delay(1000);
 }
