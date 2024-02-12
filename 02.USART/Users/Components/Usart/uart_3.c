@@ -55,22 +55,18 @@ void UART3_RxCpltCallback(UART_HandleTypeDef *huart)
     {
         printf("发送1");
     }
-
     else if (Uart_RxBuffer_3 == '2') // 当发送2时，翻转电平
     {
         printf("发送2");
     }
-
     else if (Uart_RxBuffer_3 == '3') // 当发送3时，翻转电平
     {
         printf("发送3");
     }
-
     else if (Uart_RxBuffer_3 == '4') // 当发送4时，翻转电平
     {
         printf("发送4");
     }
-
     if ((RxBuffer_3[Uart_Rx_Cnt_3 - 1] == 0x0A) && (RxBuffer_3[Uart_Rx_Cnt_3 - 2] == 0x0D)) // 判断结束位
     {
         // 这里可以写多字节消息的判断
