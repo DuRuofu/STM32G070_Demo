@@ -14,17 +14,21 @@
 
 Description：LED闪烁
 
-### 02.USART
+### 02.USART_EXIT
+
+Description：外部中断按键，控制led翻转
+
+### 03.USART
 
 Description：实现基本串口功能，重定向printf， 中断接收（单字节判断，多字节特定结束符判断）
 
-### 03.USART_IDLE
-
-Description：基于串口空闲中断实现串口不定长接收
-
 ### 04.USART_DMA
 
-Description：使用DMA对接收发送进行缓冲
+Description：使用DMA对接收发送进行改造，减少CPU占用
+
+### 05.USART_IDLE_DMA
+
+Description：基于串口空闲中断+DMA实现真正的串口不定长接收
 
 
 
