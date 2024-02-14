@@ -1,5 +1,11 @@
 #include "adc_bsp.h"
 
+void ADC_init(void)
+{
+    // ADC校准
+    HAL_ADCEx_Calibration_Start(&hadc1);
+}
+
 // ADC 0号通道测量
 uint32_t ADC_IN0_Meas(void)
 {

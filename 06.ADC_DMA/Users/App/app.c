@@ -22,5 +22,6 @@ void App_Init(void)
  */
 void App_Task(void)
 {
+    //Usart3DmaPrintf("test!!!\r\n");
 	ADC_Meas();
 }

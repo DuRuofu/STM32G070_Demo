@@ -11,6 +11,8 @@ void App_Init(void)
 {
 	// 串口中断初始化
     UART_IT_Init();
+	// ADC初始化
+	ADC_init();
 }
 
 
