@@ -30,7 +30,13 @@ Description：使用DMA对接收发送进行改造，减少CPU占用
 
 Description：基于串口空闲中断+DMA实现真正的串口不定长接收
 
+### 06.ADC
 
+Description：ADC单通道轮询
+
+### 07.ADC_DMA
+
+Description：ADC+DMA 多通道采集
 
 ## Reference
 
