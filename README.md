@@ -10,6 +10,8 @@
 
 
 
+项目结构说明：见[STM32CubeMX+keil项目标准化.md](./docs/STM32CubeMX+keil项目标准化.md)
+
 
 
 ## List
