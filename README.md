@@ -8,35 +8,41 @@
 
 ![image-20240212135916985](attachments/image-20240212135916985.png)
 
+
+
+
+
 ## List
 
-### 01.GPIO
+```shell
+.
+├── 00.Templates # 模板文件
+├── 01.GPIO
+│   ├── 01.GPIO      	     # LED闪烁
+│   ├── 02.GPIO_EXTI         # 外部中断按键，控制led翻转
+├── 02.UART
+│   ├── 01.USART     		# 实现基本串口功能，重定向printf， 中断接收（单字节判断，多字节特定结束符判断）
+│   ├── 02.USART_DMA		#使用DMA对接收发送进行改造，减少CPU占用
+│   ├── 03.USART_IDLE_DMA    # 基于串口空闲中断+DMA实现真正的串口不定长接收
+├── 03.TIM
+├── 04.ADC
+│   ├── 01.ADC          	# ADC单通道轮询
+│   ├── 02.ADC_DMA      	# ADC+DMA 多通道采集
+├── 05.IIC
+├── 06.SPI
+├── 07.CRC
+├── 08.IWDG
+├── 09.RCT
+├── 10.Low_Power
+├── 11.FreeRTOS
+├── 12.RT-Thread
+├── 13.ELAB
+├── docs  # 放跟工程相关的文档
+├── README.md  # 自述文件
+├── .gitignore # git
+```
 
-Description：LED闪烁
 
-### 02.USART_EXIT
-
-Description：外部中断按键，控制led翻转
-
-### 03.USART
-
-Description：实现基本串口功能，重定向printf， 中断接收（单字节判断，多字节特定结束符判断）
-
-### 04.USART_DMA
-
-Description：使用DMA对接收发送进行改造，减少CPU占用
-
-### 05.USART_IDLE_DMA
-
-Description：基于串口空闲中断+DMA实现真正的串口不定长接收
-
-### 06.ADC
-
-Description：ADC单通道轮询
-
-### 07.ADC_DMA
-
-Description：ADC+DMA 多通道采集
 
 ## Reference
 
